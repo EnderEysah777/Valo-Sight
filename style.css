@@ -1,0 +1,129 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;  
+}
+
+body{
+  display:flex;
+  font-family: "Montserrat", sans-serif;
+  padding=0;
+  margin=0;
+}
+
+li{
+  transition: all .2s ease-in-out; 
+  display:inline-block;
+
+}
+
+html{
+    height: 100%;
+}
+
+header{
+    position: fixed;
+    top:0;  
+    display:flex;
+    flex-grow: 1;
+    min-width: 100%;
+}
+
+body{
+  
+  background-color: #36393f;
+  color:white;
+  min-height: 100%;
+  margin: 0px;
+}
+
+button{
+  color:white;
+  background-color:#ff5953;
+  vertical-align: top;
+  height: 80px;
+  width: 80px;
+}
+
+.Menu-bar{
+  background-color:#ff5953;
+  text-align: left;
+  min-width: 100%;
+}
+
+.Menu-bar ul{
+  display: inline-flex;
+  list-style:none;
+  color:#fff;
+  
+}
+
+.Menu-bar ul li{
+  width:120px;
+  margin:15px;
+  padding:15px;
+  vertical-align: middle;
+  
+}
+
+.Menu-bar ul li a{
+  text-align: middle;
+  text-decoration:none;
+  color: white;
+}
+
+.active, .Menu-bar ul li:hover{
+  background: #d53430;
+  border-radius: 3px;
+}
+
+.sub-menu-1{
+  display:none;
+}
+
+.Menu-bar ul li:hover .sub-menu-1{ 
+  display:block;
+  position:absolute;
+  background: #660000;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.Menu-bar ul li:hover .sub-menu-1 ul{
+  display:block;
+  margin: 10px;
+}
+
+.Menu-bar ul li:hover .sub-menu-1 ul li{
+  width:150px;
+  padding:10px;
+  border-bottom:1px dotted #fff;
+  text-align:left;
+}
+
+main{
+  display: flex;
+  flex-grow: 10;
+  flex-direction: column;
+}
+
+.Cards{
+  background-color:#36393f;
+  text-align: left;
+  color:white;
+  padding: 5px;
+  border: 1px solid #36393f;
+  column-gap: 20px;
+  max-width: auto;
+}
+
+
+
+td{
+  padding: 0 10px;
+  border: 1px dashed #660000;
+}
+
+.wow {
+  width: 100px; 
+}
+
